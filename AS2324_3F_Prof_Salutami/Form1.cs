@@ -10,6 +10,11 @@ namespace AS2324_3F_Prof_Salutami
         private void btnSaluta_Click(object sender, EventArgs e)
         {
             lblSaluto.Text = "Ciao " + txtNome.Text;
+
+            if (txtNome.Text.EndsWith("a"))
+                lblSaluto.ForeColor = Color.Pink;
+            else
+                lblSaluto.ForeColor = Color.Blue;
         }
     }
 }
