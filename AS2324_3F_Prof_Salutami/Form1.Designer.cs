@@ -28,12 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            txtNome = new TextBox();
+            lblSaluto = new Label();
+            btnSaluta = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(137, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Nome";
+            // 
+            // txtNome
+            // 
+            txtNome.Location = new Point(195, 84);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(260, 27);
+            txtNome.TabIndex = 1;
+            // 
+            // lblSaluto
+            // 
+            lblSaluto.AutoSize = true;
+            lblSaluto.Location = new Point(198, 154);
+            lblSaluto.Name = "lblSaluto";
+            lblSaluto.Size = new Size(18, 20);
+            lblSaluto.TabIndex = 2;
+            lblSaluto.Text = "...";
+            // 
+            // btnSaluta
+            // 
+            btnSaluta.Location = new Point(259, 235);
+            btnSaluta.Name = "btnSaluta";
+            btnSaluta.Size = new Size(151, 49);
+            btnSaluta.TabIndex = 3;
+            btnSaluta.Text = "Saluta";
+            btnSaluta.UseVisualStyleBackColor = true;
+            btnSaluta.Click += btnSaluta_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(653, 368);
+            Controls.Add(btnSaluta);
+            Controls.Add(lblSaluto);
+            Controls.Add(txtNome);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Prof; 3F; 01/03/2024; Saluta";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtNome;
+        private Label lblSaluto;
+        private Button btnSaluta;
     }
 }

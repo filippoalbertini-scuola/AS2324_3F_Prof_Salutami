@@ -6,5 +6,10 @@ namespace AS2324_3F_Prof_Salutami
         {
             InitializeComponent();
         }
+
+        private void btnSaluta_Click(object sender, EventArgs e)
+        {
+            lblSaluto.Text = "Ciao " + txtNome.Text;
+        }
     }
 }
