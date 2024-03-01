@@ -11,7 +11,7 @@ namespace AS2324_3F_Prof_Salutami
         {
             lblSaluto.Text = "Ciao " + txtNome.Text;
 
-            if (txtNome.Text.EndsWith("a"))
+            if (txtNome.Text.ToLower().EndsWith("a"))
                 lblSaluto.ForeColor = Color.Pink;
             else
                 lblSaluto.ForeColor = Color.Blue;
